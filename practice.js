@@ -1,11 +1,7 @@
-var countDays = function (days, meetings) {
-  let daysArr = [];
-  for (let i = 1; i <= days; i++) {
-    daysArr.push(i);
-  }
-  meetings.forEach((each) => {
-    daysArr.splice(each[0] - 1, each[1] - each[0]);
-  });
+const currency = "usd";
 
-  return daysArr.length;
-};
+fetch(
+  `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`
+)
+  .then((res) => res.json())
+  .then((res) => console.log(res));
