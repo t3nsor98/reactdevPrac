@@ -85,7 +85,7 @@ export default function Header() {
               </li>
               <li>
                 <NavLink
-                  to="/projects"
+                  to="/github"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 
                     ${
@@ -95,12 +95,12 @@ export default function Header() {
                     } lg:hover:bg-transparent lg:border-0 lg:p-0`
                   }
                 >
-                  Projects
+                  GitHub
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/donate"
+                  to="/user"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 
                     ${
@@ -110,7 +110,7 @@ export default function Header() {
                     } lg:hover:bg-transparent lg:border-0 lg:p-0`
                   }
                 >
-                  Donate
+                  User
                 </NavLink>
               </li>
             </ul>
