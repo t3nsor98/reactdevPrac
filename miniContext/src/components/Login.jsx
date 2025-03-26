@@ -10,7 +10,7 @@ const Login = () => {
     setUser({ username, password });
   };
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center">
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <input
           type="text"
